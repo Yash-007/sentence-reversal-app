@@ -4,7 +4,7 @@ const cors = require('cors');
 
 const app = express();
 const corsOptions = {
-    origin: 'https://sentences-reversal-app.onrender.com/',
+    origin: '*',
     methods: 'POST',
 };
 app.use(cors(corsOptions));
