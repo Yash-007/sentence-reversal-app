@@ -3,7 +3,11 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-app.use(cors());
+const corsOptions = {
+    origin: 'https://sentences-reversal-app.onrender.com/',
+    methods: 'POST',
+};
+app.use(cors(corsOptions));
 const PORT = process.env.PORT || 5000;
 
 
