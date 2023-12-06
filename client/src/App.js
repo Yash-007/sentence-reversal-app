@@ -7,7 +7,7 @@ function App() {
 
     const handleSubmit = async () => {
       try {
-          const response = await fetch('http://localhost:5000/reverse-sentence', {
+          const response = await fetch('https://sentence-reversal-app-413u.onrender.com/reverse-sentence', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json',
